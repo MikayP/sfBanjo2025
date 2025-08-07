@@ -1,4 +1,5 @@
 <?php
+
 if ( ! function_exists( 'sf_banjo_theme_support' ) ) {
 	/**
 	 * General Theme Settings.
