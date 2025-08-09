@@ -93,3 +93,11 @@ if ( ! function_exists( 'sf_banjo_load_scripts' ) ) {
 	}
 	add_action( 'wp_enqueue_scripts', 'sf_banjo_load_scripts' );
 }
+
+function enqueue_glide_assets() {
+wp_enqueue_style('glide-core', get_template_directory_uri() . '/assets/glide.core.min.css');
+wp_enqueue_style('glide-theme', get_template_directory_uri() . '/assets/glide.theme.min.css');
+wp_enqueue_script('glide-js', get_template_directory_uri() . '/assets/glide.min.js', array(), null, true);
+
+}
+add_action('wp_enqueue_scripts', 'enqueue_glide_assets');

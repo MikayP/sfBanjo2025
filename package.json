@@ -10,13 +10,15 @@
 		"url": "git://github.com/them-es/themes-starter-fse.git"
 	},
 	"scripts": {
-		"watch": "webpack serve && wp-scripts start",
+		"watch": "wp-scripts start",
 		"build": "wp-scripts build"
 	},
 	"browserslist": [
 		"last 2 versions"
 	],
-	"dependencies": {},
+	"dependencies": {
+		"@glidejs/glide": "^3.7.1"
+	},
 	"devDependencies": {
 		"@wordpress/scripts": "^27.7.0",
 		"path": "^0.12.7",
