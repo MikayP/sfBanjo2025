@@ -36,7 +36,10 @@ $media-max-width-lg: 999px; // var(--wp--custom--media-max-width--lg);
 /**
  * General
  */
+  h2{font-size:4rem !important;}
 
+ h3{font-size:3rem !important;}
+ h4{font-size:2rem !important;}
 img {
   vertical-align: middle;
 }
@@ -424,3 +427,18 @@ ul.wp-block-post-template {
 //     width: 177.78vh;
 //   }
 // }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

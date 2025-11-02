@@ -36,7 +36,6 @@ var glide = new Glide('#intro', {
 
 glide.mount()
 
-
 	// Switching to mobile: https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/onchange
 	const isMobile = window.matchMedia(
 		'(max-width: ' + getComputedStyle(document.body).getPropertyValue('--custom--media-max-width--sm') + ')'
@@ -70,3 +69,21 @@ glide.mount()
 		passwordButton.classList.add('wp-block-button__link');
 	}
 })();
+      const videos = document.querySelectorAll('.video-container');
+
+  videos.forEach(video => {
+	  console.log('fire')
+    video.addEventListener('click', () => {
+		    console.log('fire')
+      videos.forEach(v => {
+        if (v !== video) {
+          v.contentWindow.postMessage(
+            JSON.stringify({ event: 'command', func: 'stopVideo', args: [] }),
+            '*'
+          );
+        }
+      });
+	  
+    });
+
+  });
