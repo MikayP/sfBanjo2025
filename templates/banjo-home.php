@@ -1,11 +1,18 @@
-<!doctype html>
+<?php
+/*
+Template Name: Banjo Home template
+*/
+ wp_head();
+?>
+
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>The Rusty Strings - Old School Banjo Band</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
+ 
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
@@ -13,7 +20,15 @@
       src="https://kit.fontawesome.com/e87fb6e1d4.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.css"
+    /> -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Almendra+SC&family=Roboto+Slab:wght@400;700&display=swap");
 
@@ -114,9 +129,9 @@
             >Live</a
           >
           <a
-            href="#gallery"
+            href="#media"
             class="nav-link px-3 py-2 text-amber-100 hover:text-amber-300"
-            >Gallery</a
+            >Media</a
           >
           <a
             href="#contact"
@@ -439,7 +454,7 @@
                 target="_blank"
                 href="https://www.google.com/maps/place/655+Mission+Rd,+South+San+Francisco,+CA+94080/data=!4m2!3m1!1s0x808f7976e279f693:0xc7f07d558cec597e?sa=X&ved=1t:242&ictx=111"
               >
-                655 Mission Rd. South San Francisco, CA 94080
+                1655 Mission Rd. South San Francisco, CA 94080
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </h3>
@@ -452,96 +467,244 @@
             </div>
           </div>
         </div>
+        <div>
+          <h3 class="title-font text-center pt-10">
+            If you would like to book a show
+            <a href="#contact" class=
+              ><span class="font-bold"
+                >Contact Us <i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </h3>
+        </div>
       </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-amber-50">
+    <section id="media" class="py-20 bg-amber-50">
       <div class="container mx-auto px-6">
         <h2
           class="title-font text-3xl md:text-4xl text-center mb-16 text-amber-900"
         >
           Media
         </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/l4hPXs-lW1g?enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="list-of-songs flex content-center flex-wrap">
+            <ul class="list-none">
+              <li id="alabama" class="active">
+                <button>The Alabama Jubilee</button>
+              </li>
+              <li id="battle-of-new-orleans">
+                <button>Battle of New Orleans</button>
+              </li>
+              <li id="bill-bailey">
+                <button>Bill Bailey (remote)</button>
+              </li>
+              <li id="blue-swede-shoes">
+                <button>Blue Swede Shoes</button>
+              </li>
+              <li id="burbon-street">
+                <button>Bourbon Street</button>
+              </li>
+              <li id="five-foot">
+                <button>Five Foot Two</button>
+              </li>
+
+              <li id="hot-time">
+                <button>Hot Time in the Old Town Tonight</button>
+              </li>
+              <li id="i-wanna-be-like-you">
+                <button>I wanna be like you</button>
+              </li>
+              <li id="sin-to-tell-lie">
+                <button>It's a sin to tell a lie</button>
+              </li>
+              <li id="tipperary">
+                <button>It's a Long Way to Tipperary</button>
+              </li>
+              <li id="sit-right-down">
+                <button>
+                  I'm going to sit right down and write myself a letter
+                </button>
+              </li>
+
+              <li id="invented-champagn">
+                <button>Night they Invented Champagne</button>
+              </li>
+
+              <li id="san-francisco">
+                <button>San Francisco Bay Blues</button>
+              </li>
+
+              <li id="stole-gal">
+                <button>Somebody Stole My Gal</button>
+              </li>
+
+              <li id="sweet-georgia">
+                <button>Sweet Georgia Brown (remote)</button>
+              </li>
+            </ul>
           </div>
 
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/NX-s8QDPfQw?enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
+          <div id="blue-swede-shoes-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/l4hPXs-lW1g?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
 
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/Dx-qMQkG-PQ?enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
+          <div id="burbon-street-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/NX-s8QDPfQw?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
 
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/whEUu5ZDq8Q?enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
+          <div id="sin-to-tell-lie-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/Dx-qMQkG-PQ?origin=http://sfbanjo.local/&iv_load_policy=3&modestbranding=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
 
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/jWWoKp4hAcw?enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
+          <div id="sit-right-down-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/whEUu5ZDq8Q?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
 
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/XAE8EJ5lo_c?enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
+          <div id="battle-of-new-orleans-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/jWWoKp4hAcw?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
 
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/ETqNq1JDT-w?enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
+          <div id="i-wanna-be-like-you-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/XAE8EJ5lo_c?origin=http://sfbanjo.local/&iv_load_policy=3&modestbranding=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
 
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/XaIeVut5xJk?enablejsapi=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
+          <div id="invented-champagn-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/ETqNq1JDT-w?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+
+          <div id="alabama-vid" class="video-wrapper">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/XaIeVut5xJk?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+
+          <div id="tipperary-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/LsRyyXKI2xU?origin=http://sfbanjo.local/&iv_load_policy=3&modestbranding=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div id="san-francisco-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/xXRjAbrT5hA?origin=http://sfbanjo.local/&iv_load_policy=3&modestbranding=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+
+          <div id="sweet-georgia-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/iLZC_RCqN0w?origin=http://sfbanjo.local/&iv_load_policy=3&modestbranding=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+
+          <div id="bill-bailey-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/dkOPmH9j1FE?origin=http://sfbanjo.local/&iv_load_policy=3&modestbranding=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+
+          <div id="hot-time-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/wPGZOQaWQrc?origin=http://sfbanjo.local/&iv_load_policy=3&modestbranding=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div id="stole-gal-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/Jdy0bxPX6aY?origin=http://sfbanjo.local/&iv_load_policy=3&modestbranding=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+          <div id="five-foot-vid" class="video-wrapper hidden">
+            <div class="plyr__video-embed relative">
+              <iframe
+                src="https://www.youtube.com/embed/U0qFIFVF9oA?origin=http://sfbanjo.local/&iv_load_policy=3&modestbranding=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -557,46 +720,26 @@
         </h2>
         <div class="flex flex-col md:flex-row">
           <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-            <h3 class="text-2xl mb-6 font-bold">Book The Rusty Strings</h3>
+            <h3 class="text-2xl mb-6 font-bold">
+              Book The San Francisco Banjo band
+            </h3>
             <p class="mb-8">
               Interested in having us perform at your event? Fill out the form
-              and we'll get back to you within 48 hours. We play festivals,
-              weddings, private parties, and more.
+              and we'll get back to you. We play festivals, private parties, and
+              more.
             </p>
             <div class="space-y-4">
               <div class="flex items-start">
                 <i class="fas fa-map-marker-alt text-amber-300 mt-1 mr-3"></i>
-                <span>Based in Asheville, NC - Traveling nationwide</span>
+                <span>Based in the Bay Area</span>
               </div>
-              <div class="flex items-center">
-                <i class="fas fa-phone text-amber-300 mr-3"></i>
-                <span>(828) 555-0199</span>
-              </div>
-              <div class="flex items-center">
-                <i class="fas fa-envelope text-amber-300 mr-3"></i>
-                <span>bookings@therustystrings.com</span>
-              </div>
+   
             </div>
-            <div class="mt-10">
-              <h4 class="text-xl mb-4">Follow Us</h4>
-              <div class="flex space-x-4">
-                <a href="#" class="text-amber-200 hover:text-white text-2xl">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" class="text-amber-200 hover:text-white text-2xl">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="text-amber-200 hover:text-white text-2xl">
-                  <i class="fab fa-youtube"></i>
-                </a>
-                <a href="#" class="text-amber-200 hover:text-white text-2xl">
-                  <i class="fab fa-spotify"></i>
-                </a>
-              </div>
-            </div>
+
           </div>
           <div class="md:w-1/2">
-            <form class="space-y-6">
+                 <?php echo do_shortcode('[wpforms id="50"]'); ?>
+            <!-- <form class="space-y-6">
               <div>
                 <label for="name" class="block mb-2">Your Name</label>
                 <input
@@ -641,14 +784,14 @@
               >
                 Send Message
               </button>
-            </form>
+            </form> -->
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-amber-950 text-amber-200 py-10">
+    <!-- <footer class="bg-amber-950 text-amber-200 py-10">
       <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="mb-6 md:mb-0">
@@ -667,9 +810,10 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+<?php wp_footer(); ?>
 
-    <script>
+    <!-- <script>
       // Mobile menu toggle
       document
         .getElementById("mobile-menu-button")
@@ -712,9 +856,7 @@
           nav.classList.remove("bg-opacity-90");
         }
       });
-  
-    </script>
-
-    
-  </body>
-</html>
+    </script> -->
+    <!-- <script src="https://cdn.plyr.io/3.8.3/plyr.js"></script> -->
+  <!-- </body>
+</html> -->

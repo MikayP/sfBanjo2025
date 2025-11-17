@@ -1,5 +1,70 @@
 <?php
 
+function mysite_enqueue_assets() {
+
+    /* -------------------------
+       Tailwind CDN
+    -------------------------- */
+    wp_enqueue_script(
+        'tailwindcdn',
+        'https://cdn.tailwindcss.com',
+        array(),
+        null,
+        false // load in <head>
+    );
+
+    /* -------------------------
+       Font Awesome (CSS)
+    -------------------------- */
+    wp_enqueue_style(
+        'fa-css',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+        array(),
+        '6.4.0'
+    );
+
+    /* -------------------------
+       Font Awesome Kit
+    -------------------------- */
+    wp_enqueue_script(
+        'fa-kit',
+        'https://kit.fontawesome.com/e87fb6e1d4.js',
+        array(),
+        null,
+        true
+    );
+
+    /* -------------------------
+       Plyr CSS
+    -------------------------- */
+    wp_enqueue_style(
+        'plyr-css-cdnfree',
+        'https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css',
+        array(),
+        null
+    );
+
+    wp_enqueue_style(
+        'plyr-css-main',
+        'https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.css',
+        array(),
+        '3.6.7'
+    );
+
+    /* -------------------------
+       Plyr JS
+    -------------------------- */
+    wp_enqueue_script(
+        'plyr-js',
+        'https://cdn.plyr.io/3.8.3/plyr.js',
+        array(),
+        '3.8.3',
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'mysite_enqueue_assets');
+
+
 if ( ! function_exists( 'sf_banjo_theme_support' ) ) {
 	/**
 	 * General Theme Settings.
@@ -101,3 +166,4 @@ wp_enqueue_script('glide-js', get_template_directory_uri() . '/assets/glide.min.
 
 }
 add_action('wp_enqueue_scripts', 'enqueue_glide_assets');
+
