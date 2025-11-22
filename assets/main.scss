@@ -7,6 +7,35 @@
  * https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json
  */
 
+$primary-dark-blue: #171738 !important;
+$primary-red: #a62639 !important;
+$primary-cream: #f2e7c9 !important;
+$primary-sky-blue: #6689a1 !important;
+
+.dark-blue {
+  color: $primary-dark-blue;
+}
+
+.red {
+  color: $primary-red;
+}
+
+.text-white,
+.cream {
+  color: $primary-cream;
+}
+
+.sky-blue {
+  color: $primary-sky-blue;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: $primary-cream;
+  color: $primary-cream;
+}
+
+p{font-weight: 600;}
 // Grayscale vars
 $black: var(--wp--preset--color--black) !default;
 $dark-gray: var(--wp--preset--color--dark-gray) !default;
@@ -465,4 +494,38 @@ ul.wp-block-post-template {
 .plyr--video {
   border-radius: 15px;
   box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.6) !important;
+}
+
+.glide__bullet, .glide__bullet--active {
+  background-color: $primary-dark-blue;
+}
+nav {
+  background-color: $primary-red;
+  .nav-link {
+    color: $primary-cream;
+    &:hover {
+      color: $primary-cream;
+    }
+    &:after {
+      background-color: $primary-cream;
+    }
+  }
+}
+
+.hero-cta {
+  a{
+    background-color: $primary-cream;
+    color:$primary-dark-blue;
+    border:2px solid $primary-dark-blue;
+     &:hover {
+    background-color:d ;
+  }
+  }
+
+}
+
+.glide__arrow,.glide__arrow:hover{
+  background-color: $primary-dark-blue;
+  color: $primary-cream;
+  border-radius: 50% !important;
 }

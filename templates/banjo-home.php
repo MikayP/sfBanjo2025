@@ -32,11 +32,6 @@ Template Name: Banjo Home template
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Almendra+SC&family=Roboto+Slab:wght@400;700&display=swap");
 
-      body {
-        font-family: "Roboto Slab", serif;
-        background-color: #f5f5dc;
-        color: #3a3226;
-      }
       /* 
       .banjo-bg {
         background-image: url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
@@ -104,13 +99,12 @@ Template Name: Banjo Home template
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="bg-amber-900 text-amber-50 sticky top-0 z-50 shadow-lg">
+    <nav class=" sticky top-0 z-50 shadow-lg">
       <div
         class="container mx-auto px-6 py-3 flex justify-between items-center"
       >
         <div class="flex items-center space-x-2">
-          <i class="fas fa-banjo text-2xl text-amber-200 banjo-icon"></i>
-          <span class="title-font text-xl md:text-2xl">The Rusty Strings</span>
+          <span class="title-font text-xl md:text-2xl">San Francisco Banjo Band</span>
         </div>
         <div class="hidden md:flex space-x-8">
           <a
@@ -181,7 +175,7 @@ Template Name: Banjo Home template
     <!-- Hero Section -->
     <section
       id="home"
-      class="banjo-bg text-white min-h-screen flex items-center justify-center relative overflow-hidden"
+      class="banjo-bg min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       <!-- Video background -->
       <video
@@ -204,26 +198,26 @@ Template Name: Banjo Home template
       <!-- Foreground content -->
       <div class="container mx-auto px-6 z-10 text-center">
         <h1
-          class="title-font text-4xl md:text-6xl lg:text-7xl mb-6 text-amber-200"
+          class="title-font text-4xl md:text-6xl lg:text-7xl mb-6 sky-blue"
         >
-          The Rusty Strings
+         San Francisco Banjo Band
         </h1>
         <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
           Keeping the old-time banjo tradition alive with foot-stomping,
           hand-clapping melodies
         </p>
         <div
-          class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6"
+          class=" hero-cta flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6"
         >
           <a
             href="#music"
-            class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105"
+            class="bg-amber-600 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105"
           >
-            Listen Now
+            Shows
           </a>
           <a
             href="#contact"
-            class="bg-transparent border-2 border-amber-400 hover:bg-amber-900 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105"
+            class="bg-transparent border-2 border-amber-400  text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105"
           >
             Book Us
           </a>
@@ -234,7 +228,7 @@ Template Name: Banjo Home template
       <div class="absolute bottom-10 left-0 right-0 text-center z-10">
         <a
           href="#about"
-          class="text-amber-200 hover:text-white animate-bounce inline-block"
+          class=" hover:text-white animate-bounce inline-block"
         >
           <i class="fas fa-chevron-down text-3xl"></i>
         </a>
@@ -245,7 +239,7 @@ Template Name: Banjo Home template
     <section id="about" class="py-20 bg-amber-50">
       <div class="container mx-auto px-6">
         <h2
-          class="title-font text-3xl md:text-4xl text-center mb-16 text-amber-900"
+          class="title-font text-3xl md:text-4xl text-center mb-16 dark-blue"
         >
           Our Story
         </h2>
@@ -253,7 +247,7 @@ Template Name: Banjo Home template
         <div class="flexm flex-colm md:flex-rowm items-center">
           <div class="mb-10 md:mb-0 md:pr-10"></div>
 
-          <div class="">
+          <div class="sky-blue">
             <p>
               The San Francisco Banjo Band is celebrating its 48th year of
               entertaining throughout the Bay Area. The band often referred to
@@ -417,13 +411,16 @@ Template Name: Banjo Home template
                 </li>
               </ul>
             </div>
-
+   <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+      </div>
             <!-- Optional: navigation bullets -->
-            <div class="glide__bullets" data-glide-el="controls[nav]">
+            <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
               <button class="glide__bullet" data-glide-dir="=0"></button>
               <button class="glide__bullet" data-glide-dir="=1"></button>
               <button class="glide__bullet" data-glide-dir="=2"></button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

@@ -32,6 +32,7 @@ import "@glidejs/glide/dist/css/glide.theme.min.css";
         perView: 1,
       },
     },
+
   });
 
   glide.mount();
