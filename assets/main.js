@@ -139,25 +139,38 @@ players.forEach((player, index) => {
 document.querySelectorAll(".list-none li").forEach(li => {
   li.addEventListener("click", () => {
 
-    // Remove active from all list items
-    document.querySelectorAll(".list-none li").forEach(item =>
-      item.classList.remove("active")
-    );
+    // Remove active class from all items
+    document.querySelectorAll(".list-none li").forEach(item => {
+      item.classList.remove("active");
 
-    // Add active to clicked item
+      // Remove existing icons
+      const icon = item.querySelector("i");
+      if (icon) icon.remove();
+    });
+
+    // Add active class to clicked item
     li.classList.add("active");
+
+    // Add Font Awesome arrow
+    li.querySelector("button").insertAdjacentHTML(
+      "beforeend",
+      ' <i class="fa-solid fa-arrow-right"></i>'
+    );
 
     // Hide all video wrappers
     document.querySelectorAll(".video-wrapper").forEach(vid =>
       vid.classList.add("hidden")
     );
-      players.forEach(player => player.pause());
 
-    // Show the related video (match ID + "-vid")
+    // Pause all players
+    players.forEach(player => player.pause());
+
+    // Show the correct video
     const target = document.getElementById(li.id + "-vid");
     if (target) target.classList.remove("hidden");
   });
 });
+
 
    // Mobile menu toggle
       document

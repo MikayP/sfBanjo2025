@@ -35,7 +35,13 @@ body {
   color: $primary-cream;
 }
 
-p{font-weight: 600;}
+.bg-blue {
+  background-color: $primary-dark-blue;
+}
+
+p {
+  font-weight: 600;
+}
 // Grayscale vars
 $black: var(--wp--preset--color--black) !default;
 $dark-gray: var(--wp--preset--color--dark-gray) !default;
@@ -488,15 +494,21 @@ ul.wp-block-post-template {
   flex-direction: column;
   justify-content: center;
 }
-.list-of-songs li.active button {
-  font-weight: 800;
+.list-of-songs {
+  li {
+    color:$primary-dark-blue;
+    &.active button {
+      font-weight: 800;
+    }
+  }
 }
 .plyr--video {
   border-radius: 15px;
   box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.6) !important;
 }
 
-.glide__bullet, .glide__bullet--active {
+.glide__bullet,
+.glide__bullet--active {
   background-color: $primary-dark-blue;
 }
 nav {
@@ -513,18 +525,18 @@ nav {
 }
 
 .hero-cta {
-  a{
+  a {
     background-color: $primary-cream;
-    color:$primary-dark-blue;
-    border:2px solid $primary-dark-blue;
-     &:hover {
-    background-color:d ;
+    color: $primary-dark-blue;
+    border: 2px solid $primary-dark-blue;
+    &:hover {
+      background-color: d;
+    }
   }
-  }
-
 }
 
-.glide__arrow,.glide__arrow:hover{
+.glide__arrow,
+.glide__arrow:hover {
   background-color: $primary-dark-blue;
   color: $primary-cream;
   border-radius: 50% !important;

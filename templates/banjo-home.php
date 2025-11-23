@@ -412,8 +412,8 @@ Template Name: Banjo Home template
               </ul>
             </div>
    <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-arrow-right"></i></button>
       </div>
             <!-- Optional: navigation bullets -->
             <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
@@ -427,10 +427,10 @@ Template Name: Banjo Home template
     </section>
 
     <!-- Music Section -->
-    <section id="music" class="py-20 bg-amber-100">
+    <section id="music" class="py-20 bg-blue">
       <div class="container mx-auto px-6">
         <h2
-          class="title-font text-3xl md:text-5xl text-center mb-16 text-amber-900"
+          class="title-font text-3xl md:text-5xl text-center mb-16 cream"
         >
           Monthly show
         </h2>
@@ -446,7 +446,7 @@ Template Name: Banjo Home template
             /></a>
           </div>
           <div class="lg:w-2/3 lg:pl-16">
-            <h3 class="title-font text-3xl mb-6 text-amber-800">
+            <h3 class="title-font text-3xl mb-6 cream">
               <a
                 target="_blank"
                 href="https://www.google.com/maps/place/655+Mission+Rd,+South+San+Francisco,+CA+94080/data=!4m2!3m1!1s0x808f7976e279f693:0xc7f07d558cec597e?sa=X&ved=1t:242&ictx=111"
@@ -480,7 +480,7 @@ Template Name: Banjo Home template
     <section id="media" class="py-20 bg-amber-50">
       <div class="container mx-auto px-6">
         <h2
-          class="title-font text-3xl md:text-4xl text-center mb-16 text-amber-900"
+          class="title-font text-3xl md:text-4xl text-center mb-16 dark-blue"
         >
           Media
         </h2>
@@ -488,7 +488,7 @@ Template Name: Banjo Home template
           <div class="list-of-songs flex content-center flex-wrap">
             <ul class="list-none">
               <li id="alabama" class="active">
-                <button>The Alabama Jubilee</button>
+                <button>The Alabama Jubilee <i class="fa-solid fa-arrow-right"></i></button>
               </li>
               <li id="battle-of-new-orleans">
                 <button>Battle of New Orleans</button>
@@ -708,15 +708,15 @@ Template Name: Banjo Home template
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-amber-900 text-white">
+    <section id="contact" class="py-20 bg-blue text-white">
       <div class="container mx-auto px-6">
         <h2
-          class="title-font text-3xl md:text-4xl text-center mb-16 text-amber-200"
+          class="title-font text-3xl md:text-4xl text-center mb-16 cream"
         >
           Get In Touch
         </h2>
         <div class="flex flex-col md:flex-row">
-          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 pt-4">
             <h3 class="text-2xl mb-6 font-bold">
               Book The San Francisco Banjo band
             </h3>
