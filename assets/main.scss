@@ -73,7 +73,7 @@ $media-max-width-lg: 999px; // var(--wp--custom--media-max-width--lg);
  */
 @for $i from 1 through 6 {
   h#{$i} {
-    line-height: 3rem !important;
+    // line-height: 3rem !important;
   }
 }
 
@@ -497,6 +497,7 @@ ul.wp-block-post-template {
 .list-of-songs {
   li {
     color:$primary-dark-blue;
+    button{text-align: left;}
     &.active button {
       font-weight: 800;
     }
@@ -540,4 +541,8 @@ nav {
   background-color: $primary-dark-blue;
   color: $primary-cream;
   border-radius: 50% !important;
+}
+
+#home{
+  background-color: $primary-dark-blue;
 }

@@ -172,14 +172,50 @@ Template Name: Banjo Home template
       </div>
     </nav>
 
+
     <!-- Hero Section -->
-    <section
-      id="home"
-      class="banjo-bg min-h-screen flex items-center justify-center relative overflow-hidden"
-    >
-      <!-- Video background -->
+<section
+  id="home"
+  class="banjo-bg flex items-center min-h-[50%] py-[2rem] relative overflow-hidden"
+>
+
+  <!-- Dark overlay (optional if you want video dimmed) -->
+  <!-- <div class="absolute inset-0 bg-black opacity-40 z-0 pointer-events-none"></div> -->
+
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-[2fr_1fr] items-center relative z-10 gap-10">
+
+    <!-- LEFT COLUMN — TEXT -->
+    <div class="text-left ">
+      <h1 class="title-font text-4xl md:text-6xl lg:text-7xl mb-6 sky-blue">
+        San Francisco Banjo Band
+      </h1>
+
+      <p class="text-xl md:text-2xl mb-8 max-w-xl">
+        Keeping the old-time banjo tradition alive with foot-stomping,
+        hand-clapping melodies
+      </p>
+
+      <div class="hero-cta flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 ">
+        <a
+          href="#music"
+          class="bg-amber-600 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105 "
+        >
+          Shows
+        </a>
+
+        <a
+          href="#contact"
+          class="bg-transparent border-2 border-amber-400 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105"
+        >
+          Book Us
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN — VIDEO -->
+    <div class="relative w-full h-64 md:h-full overflow-hidden rounded-xl plyr--video ">
       <video
-        class="absolute top-1/2 left-1/2 w-auto min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 object-cover -z-10"
+        class="w-full h-full object-cover"
         autoplay
         muted
         loop
@@ -191,38 +227,39 @@ Template Name: Banjo Home template
         />
         Your browser does not support the video tag.
       </video>
+    </div>
 
-      <!-- Dark overlay -->
-      <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+  </div>
 
-      <!-- Foreground content -->
-      <div class="container mx-auto px-6 z-10 text-center">
-        <h1
-          class="title-font text-4xl md:text-6xl lg:text-7xl mb-6 sky-blue"
-        >
-         San Francisco Banjo Band
-        </h1>
-        <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-          Keeping the old-time banjo tradition alive with foot-stomping,
-          hand-clapping melodies
-        </p>
-        <div
-          class=" hero-cta flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6"
-        >
-          <a
-            href="#music"
-            class="bg-amber-600 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105"
-          >
-            Shows
-          </a>
-          <a
-            href="#contact"
-            class="bg-transparent border-2 border-amber-400  text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105"
-          >
-            Book Us
-          </a>
-        </div>
-      </div>
+  <!-- Scroll-down arrow -->
+  <!-- <div class="absolute bottom-10 left-0 right-0 text-center z-10">
+    <a href="#about" class="hover:text-white animate-bounce inline-block">
+      <i class="fas fa-chevron-down text-3xl"></i>
+    </a>
+  </div> -->
+
+</section>
+
+    <!-- Hero Section -->
+    <!-- <section
+      id="home"
+      class="banjo-bg min-h-screen flex items-center justify-center relative overflow-hidden"
+    > -->
+      <!-- Video background -->
+      <!-- <video
+        class="absolute top-1/2 left-1/2 w-auto min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 object-cover -z-10"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source
+          src="/wp-content/uploads/2025/08/San-Francisco-Banjo-Band-Five-Foot-Two.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video> -->
+
 
       <!-- Scroll-down arrow -->
       <div class="absolute bottom-10 left-0 right-0 text-center z-10">
@@ -247,7 +284,7 @@ Template Name: Banjo Home template
         <div class="flexm flex-colm md:flex-rowm items-center">
           <div class="mb-10 md:mb-0 md:pr-10"></div>
 
-          <div class="sky-blue">
+          <div class="dark-blue">
             <p>
               The San Francisco Banjo Band is celebrating its 48th year of
               entertaining throughout the Bay Area. The band often referred to
@@ -519,8 +556,7 @@ Template Name: Banjo Home template
                 <button>It's a Long Way to Tipperary</button>
               </li>
               <li id="sit-right-down">
-                <button>
-                  I'm going to sit right down and write myself a letter
+                <button>I'm going to sit right down and write myself a letter
                 </button>
               </li>
 
