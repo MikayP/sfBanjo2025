@@ -214,3 +214,23 @@ document.querySelectorAll(".list-none li").forEach(li => {
           nav.classList.remove("bg-opacity-90");
         }
       });
+
+
+
+  // const menuBtn = document.getElementById("mobile-menu-button");
+  // const mobileMenu = document.getElementById("mobile-menu");
+  // const menuIcon = menuBtn.querySelector("i");
+
+  // menuBtn.addEventListener("click", () => {
+  //   mobileMenu.classList.toggle("hidden");
+
+  //   // toggle icon
+  //   if (mobileMenu.classList.contains("hidden")) {
+  //     menuIcon.classList.remove("fa-times");
+  //     menuIcon.classList.add("fa-bars");
+  //   } else {
+  //     menuIcon.classList.remove("fa-bars");
+  //     menuIcon.classList.add("fa-times");
+  //   }
+  // });
+

@@ -6,33 +6,36 @@
  * CSS variables are defined in "theme.json"
  * https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json
  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ+Guides&display=swap");
 
 $primary-dark-blue: #171738 !important;
 $primary-red: #a62639 !important;
 $primary-cream: #f2e7c9 !important;
 $primary-sky-blue: #6689a1 !important;
 
-.dark-blue {
-  color: $primary-dark-blue;
-}
-
-.red {
-  color: $primary-red;
-}
-
-.text-white,
-.cream {
-  color: $primary-cream;
-}
-
-.sky-blue {
-  color: $primary-sky-blue;
-}
-
-body {
-  font-family: "Roboto Slab", serif;
+body#app {
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
   background-color: $primary-cream;
   color: $primary-cream;
+  .dark-blue {
+    color: $primary-dark-blue;
+  }
+
+  .red,
+  a[href] {
+    color: $primary-red;
+  }
+
+  .text-white,
+  .cream {
+    color: $primary-cream;
+  }
+
+  .sky-blue {
+    color: $primary-sky-blue;
+  }
 }
 
 .bg-blue {
@@ -41,6 +44,13 @@ body {
 
 p {
   font-weight: 600;
+}
+section {
+  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+i {
+  font-size: 2rem;
 }
 // Grayscale vars
 $black: var(--wp--preset--color--black) !default;
@@ -73,7 +83,7 @@ $media-max-width-lg: 999px; // var(--wp--custom--media-max-width--lg);
  */
 @for $i from 1 through 6 {
   h#{$i} {
-    // line-height: 3rem !important;
+    line-height: 1 !important;
   }
 }
 
@@ -102,11 +112,11 @@ input[type="search"] {
   border: 1px solid $dark-gray !important;
 }
 
-h1,
-.h1 {
-  font-size: var(--wp--custom--typography--font-size--colossal);
-  line-height: var(--wp--custom--typography--line-height--page-title);
-}
+// h1,
+// .h1 {
+//   font-size: var(--wp--custom--typography--font-size--colossal);
+//   line-height: var(--wp--custom--typography--line-height--page-title);
+// }
 
 /**
  * WordPress customization
@@ -125,10 +135,6 @@ body {
           width: 180px;
           height: auto;
         }
-      }
-
-      .wp-block-post-author__name {
-        @extend .h1;
       }
 
       .wp-block-post-author__bio {
@@ -496,8 +502,11 @@ ul.wp-block-post-template {
 }
 .list-of-songs {
   li {
-    color:$primary-dark-blue;
-    button{text-align: left;}
+    color: $primary-dark-blue;
+    button {
+      text-align: left;
+      font-weight: 600;
+    }
     &.active button {
       font-weight: 800;
     }
@@ -525,14 +534,12 @@ nav {
   }
 }
 
-.hero-cta {
-  a {
-    background-color: $primary-cream;
-    color: $primary-dark-blue;
-    border: 2px solid $primary-dark-blue;
-    &:hover {
-      background-color: d;
-    }
+a.special-button {
+  background-color: $primary-cream;
+  color: $primary-dark-blue;
+  border: 2px solid $primary-dark-blue;
+  &:hover {
+    background-color: d;
   }
 }
 
@@ -543,6 +550,22 @@ nav {
   border-radius: 50% !important;
 }
 
-#home{
+#home {
   background-color: $primary-dark-blue;
+}
+
+.wpforms-container {
+  form {
+    legend,
+    label {
+      color: $primary-cream;
+    }
+    button {
+      background-color: $primary-cream;
+      color: $primary-dark-blue;
+      border-radius: 8px;
+      font-weight: 600;
+      color: $primary-red;
+    }
+  }
 }

@@ -5,11 +5,11 @@ Template Name: Banjo Home template
  wp_head();
 ?>
 
-<!-- <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Rusty Strings - Old School Banjo Band</title>
  
     <!-- <link
@@ -30,9 +30,10 @@ Template Name: Banjo Home template
       href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.css"
     /> -->
     <style>
+        /* 
       @import url("https://fonts.googleapis.com/css2?family=Almendra+SC&family=Roboto+Slab:wght@400;700&display=swap");
 
-      /* 
+    
       .banjo-bg {
         background-image: url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
         background-size: cover;
@@ -41,7 +42,6 @@ Template Name: Banjo Home template
       } */
 
       .title-font {
-        font-family: "Almendra SC", serif;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
 
@@ -97,11 +97,11 @@ Template Name: Banjo Home template
       }
     </style>
   </head>
-  <body>
+  <body id="app">
     <!-- Navigation -->
     <nav class=" sticky top-0 z-50 shadow-lg">
       <div
-        class="container mx-auto px-6 py-3 flex justify-between items-center"
+        class="container mx-auto px-6 py-6 md:py-3 flex justify-between items-center"
       >
         <div class="flex items-center space-x-2">
           <span class="title-font text-xl md:text-2xl">San Francisco Banjo Band</span>
@@ -134,38 +134,38 @@ Template Name: Banjo Home template
           >
         </div>
         <button
-          class="md:hidden text-amber-200 focus:outline-none"
+          class="md:hidden cream focus:outline-none"
           id="mobile-menu-button"
         >
-          <i class="fas fa-bars text-2xl"></i>
+          <i class="fas fa-bars text-3xl"></i>
         </button>
       </div>
       <!-- Mobile menu -->
-      <div class="md:hidden hidden bg-amber-800 px-6 py-3" id="mobile-menu">
+      <div class="md:hidden hidden  px-6 py-3" id="mobile-menu">
         <div class="flex flex-col space-y-3">
           <a
             href="#home"
-            class="nav-link px-3 py-2 text-amber-100 hover:text-amber-300"
+            class="nav-link text-right px-3 py-2 text-amber-100 hover:text-amber-300"
             >Home</a
           >
           <a
             href="#about"
-            class="nav-link px-3 py-2 text-amber-100 hover:text-amber-300"
+            class="nav-link text-right px-3 py-2 text-amber-100 hover:text-amber-300"
             >About</a
           >
           <a
             href="#music"
-            class="nav-link px-3 py-2 text-amber-100 hover:text-amber-300"
+            class="nav-link text-right px-3 py-2 text-amber-100 hover:text-amber-300"
             >Live</a
           >
           <a
-            href="#gallery"
-            class="nav-link px-3 py-2 text-amber-100 hover:text-amber-300"
+            href="#media"
+            class="nav-link text-right px-3 py-2 text-amber-100 hover:text-amber-300"
             >Media</a
           >
           <a
             href="#contact"
-            class="nav-link px-3 py-2 text-amber-100 hover:text-amber-300"
+            class="nav-link text-right px-3 py-2 text-amber-100 hover:text-amber-300"
             >Contact</a
           >
         </div>
@@ -182,11 +182,11 @@ Template Name: Banjo Home template
   <!-- Dark overlay (optional if you want video dimmed) -->
   <!-- <div class="absolute inset-0 bg-black opacity-40 z-0 pointer-events-none"></div> -->
 
-  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-[2fr_1fr] items-center relative z-10 gap-10">
+  <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center relative z-10 gap-10">
 
     <!-- LEFT COLUMN — TEXT -->
-    <div class="text-left ">
-      <h1 class="title-font text-4xl md:text-6xl lg:text-7xl mb-6 sky-blue">
+    <div class="text-left lg:w-2/3">
+      <h1 class="title-font text-4xl md:text-6xl lg:text-7xl mb-6 cream">
         San Francisco Banjo Band
       </h1>
 
@@ -198,14 +198,14 @@ Template Name: Banjo Home template
       <div class="hero-cta flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 ">
         <a
           href="#music"
-          class="bg-amber-600 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105 "
+          class="special-button bg-amber-600 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105 text-center"
         >
           Shows
         </a>
 
         <a
           href="#contact"
-          class="bg-transparent border-2 border-amber-400 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105"
+          class=" special-button bg-transparent border-2 border-amber-400 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105 text-center"
         >
           Book Us
         </a>
@@ -213,7 +213,7 @@ Template Name: Banjo Home template
     </div>
 
     <!-- RIGHT COLUMN — VIDEO -->
-    <div class="relative w-full h-64 md:h-full overflow-hidden rounded-xl plyr--video ">
+  <div class="relative w-full h-64 md:h-full overflow-hidden rounded-xl plyr--video  lg:w-1/3">  <a href="#media">
       <video
         class="w-full h-full object-cover"
         autoplay
@@ -222,11 +222,11 @@ Template Name: Banjo Home template
         playsinline
       >
         <source
-          src="/wp-content/uploads/2025/08/San-Francisco-Banjo-Band-Five-Foot-Two.mp4"
+          src="/wp-content/uploads/2025/12/SFBB.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
-      </video>
+      </video> </a>
     </div>
 
   </div>
@@ -262,19 +262,19 @@ Template Name: Banjo Home template
 
 
       <!-- Scroll-down arrow -->
-      <div class="absolute bottom-10 left-0 right-0 text-center z-10">
+      <!-- <div class="absolute bottom-10 left-0 right-0 text-center z-10">
         <a
           href="#about"
           class=" hover:text-white animate-bounce inline-block"
         >
           <i class="fas fa-chevron-down text-3xl"></i>
         </a>
-      </div>
+      </div> -->
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-amber-50">
-      <div class="container mx-auto px-6">
+    <section id="about" class="py-20 ">
+      <div class="container mx-auto">
         <h2
           class="title-font text-3xl md:text-4xl text-center mb-16 dark-blue"
         >
@@ -473,48 +473,47 @@ Template Name: Banjo Home template
         </h2>
         <div class="flex flex-col lg:flex-row items-center justify-center">
           <div class="lg:w-1/3 mb-10 lg:mb-0 relative">
-            <a
+            <a class=""
               target="_blank"
               href="/wp-content/uploads/2025/08/HPSCAN_20250718185503389_2025-07-18_185607554.pdf"
-              ><img
+              ><img class="max-h-[50vh] rounded-lg"
                 src="/wp-content/uploads/2025/08/1754531898136-b8f48e84-2763-47fb-9117-302cf96931a5_1.jpg"
                 alt="Album Cover"
                 class="rounded-2xl object-cover shadow-2xl mx-auto"
             /></a>
           </div>
           <div class="lg:w-2/3 lg:pl-16">
-            <h3 class="title-font text-3xl mb-6 cream">
-              <a
-                target="_blank"
-                href="https://www.google.com/maps/place/655+Mission+Rd,+South+San+Francisco,+CA+94080/data=!4m2!3m1!1s0x808f7976e279f693:0xc7f07d558cec597e?sa=X&ved=1t:242&ictx=111"
-              >
+            <h4 class="title-font text-3xl mb-6 cream">
                 1655 Mission Rd. South San Francisco, CA 94080
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </h3>
+            </h4>
             <div class="space-y-4 mb-8">
               <h4 class="title-font">
                 2:00pm - 4:00pm <br />No Cover Charge <br />Ample Parking
-                <br />The band plays throughout The Bay Area and monthly at
-                Molloys Tavern.
+                <!-- <br />The band plays throughout The Bay Area and monthly at
+                Molloys Tavern. -->
               </h4>
+              <h4><a class="link" target="_blank"
+                href="https://maps.app.goo.gl/c1AmTWMwmxkPbzkR7">Get Directions</a></h4>
             </div>
           </div>
         </div>
         <div>
           <h3 class="title-font text-center pt-10">
             If you would like to book a show
-            <a href="#contact" class=
-              ><span class="font-bold"
-                >Contact Us <i class="fa-solid fa-arrow-right"></i></span
-            ></a>
+     <a
+          href="#contact"
+          class="link"
+        >
+          Contact Us
+        </a>
+
           </h3>
         </div>
       </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="media" class="py-20 bg-amber-50">
+    <section id="media" class="py-20">
       <div class="container mx-auto px-6">
         <h2
           class="title-font text-3xl md:text-4xl text-center mb-16 dark-blue"
@@ -763,8 +762,8 @@ Template Name: Banjo Home template
             </p>
             <div class="space-y-4">
               <div class="flex items-start">
-                <i class="fas fa-map-marker-alt text-amber-300 mt-1 mr-3"></i>
-                <span>Based in the Bay Area</span>
+                <i class="fas fa-map-marker-alt red mt-1 mr-3"></i>
+                <span class="font-bold">Based in the Bay Area</span>
               </div>
    
             </div>
