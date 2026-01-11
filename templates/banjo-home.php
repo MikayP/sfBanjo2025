@@ -198,14 +198,14 @@ Template Name: Banjo Home template
       <div class="hero-cta flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 ">
         <a
           href="#music"
-          class="special-button bg-amber-600 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105 text-center"
+          class="special-button px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105 text-center"
         >
           Shows
         </a>
 
         <a
           href="#contact"
-          class=" special-button bg-transparent border-2 border-amber-400 text-white px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105 text-center"
+          class=" special-button bg-transparent border-2 px-8 py-3 rounded-full font-bold transition duration-300 transform hover:scale-105 text-center"
         >
           Book Us
         </a>
@@ -222,7 +222,7 @@ Template Name: Banjo Home template
         playsinline
       >
         <source
-          src="/wp-content/uploads/2025/12/SFBB.mp4"
+          src="/wp-content/uploads/2025/12/SFBB2.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -273,7 +273,7 @@ Template Name: Banjo Home template
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 ">
+    <section id="about" class="py-20 px-4">
       <div class="container mx-auto">
         <h2
           class="title-font text-3xl md:text-4xl text-center mb-16 dark-blue"
@@ -286,7 +286,7 @@ Template Name: Banjo Home template
 
           <div class="dark-blue">
             <p>
-              The San Francisco Banjo Band is celebrating its 48th year of
+              The San Francisco Banjo Band is celebrating its 65th year of
               entertaining throughout the Bay Area. The band often referred to
               as the "Best Kept Secret in the Bay Area," packs each performance
               with the songs our rich historical music past, and mainly on the
@@ -325,6 +325,17 @@ Template Name: Banjo Home template
           <div class="glide py-20" id="intro">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides items-center">
+                 <li class="glide__slide">
+                  <a
+                    href="https://sfbanjoband.com/wp-content/uploads/2026/01/DSC_5970-edited-1.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      class="rounded-md m-auto h-[300px]"
+                      src="https://sfbanjoband.com/wp-content/uploads/2026/01/DSC_5970-edited-1.jpg"
+                    />
+                  </a>
+                </li>
                 <li class="glide__slide">
                   <a
                     href="/wp-content/uploads/2025/08/malloys1972-scaled.jpg"
@@ -446,6 +457,18 @@ Template Name: Banjo Home template
                     />
                   </a>
                 </li>
+                  <li class="glide__slide">
+                  <a
+                    href="https://sfbanjoband.com/wp-content/uploads/2026/01/IMG_0606-rotated.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      class="rounded-md m-auto h-[300px]"
+                      src="https://sfbanjoband.com/wp-content/uploads/2026/01/IMG_0606-rotated.jpg"
+                    />
+                  </a>
+                </li>
+                 
               </ul>
             </div>
    <div class="glide__arrows" data-glide-el="controls">
@@ -472,28 +495,35 @@ Template Name: Banjo Home template
           Monthly show
         </h2>
         <div class="flex flex-col lg:flex-row items-center justify-center">
-          <div class="lg:w-1/3 mb-10 lg:mb-0 relative">
+          <div class="lg:w-1/2 mb-10 lg:mb-0 relative">
             <a class=""
               target="_blank"
               href="/wp-content/uploads/2025/08/HPSCAN_20250718185503389_2025-07-18_185607554.pdf"
-              ><img class="max-h-[50vh] rounded-lg"
+              ><img class="max-h-[75vh] rounded-lg"
                 src="/wp-content/uploads/2025/08/1754531898136-b8f48e84-2763-47fb-9117-302cf96931a5_1.jpg"
                 alt="Album Cover"
                 class="rounded-2xl object-cover shadow-2xl mx-auto"
             /></a>
           </div>
-          <div class="lg:w-2/3 lg:pl-16">
+          <div class="lg:w-1/2 ">
+            <h3 class="pb-4">First Saturday of each month!</h3>
             <h4 class="title-font text-3xl mb-6 cream">
                 1655 Mission Rd. South San Francisco, CA 94080
             </h4>
             <div class="space-y-4 mb-8">
+    
               <h4 class="title-font">
-                2:00pm - 4:00pm <br />No Cover Charge <br />Ample Parking
+                2:00pm - 4:00pm 
+                </h4>
+                <h4 class="title-font"> No cover charge  </h4>
+                   <h4 class="title-font">Ample parking  </h4>
                 <!-- <br />The band plays throughout The Bay Area and monthly at
                 Molloys Tavern. -->
-              </h4>
-              <h4><a class="link" target="_blank"
+ 
+              <h4><a class="link red" target="_blank"
                 href="https://maps.app.goo.gl/c1AmTWMwmxkPbzkR7">Get Directions</a></h4>
+
+                <!-- dedicated page for molloys tavern? -->
             </div>
           </div>
         </div>
@@ -502,7 +532,7 @@ Template Name: Banjo Home template
             If you would like to book a show
      <a
           href="#contact"
-          class="link"
+          class="link red"
         >
           Contact Us
         </a>
@@ -770,79 +800,12 @@ Template Name: Banjo Home template
 
           </div>
           <div class="md:w-1/2">
-                 <?php echo do_shortcode('[wpforms id="50"]'); ?>
-            <!-- <form class="space-y-6">
-              <div>
-                <label for="name" class="block mb-2">Your Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  class="w-full px-4 py-2 rounded bg-amber-800 border border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 text-white placeholder-amber-400"
-                />
-              </div>
-              <div>
-                <label for="email" class="block mb-2">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  class="w-full px-4 py-2 rounded bg-amber-800 border border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 text-white placeholder-amber-400"
-                />
-              </div>
-              <div>
-                <label for="event" class="block mb-2">Event Type</label>
-                <select
-                  id="event"
-                  class="w-full px-4 py-2 rounded bg-amber-800 border border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 text-white"
-                >
-                  <option value="">Select event type</option>
-                  <option value="wedding">Wedding</option>
-                  <option value="festival">Festival</option>
-                  <option value="private">Private Party</option>
-                  <option value="corporate">Corporate Event</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label for="message" class="block mb-2">Message</label>
-                <textarea
-                  id="message"
-                  rows="4"
-                  class="w-full px-4 py-2 rounded bg-amber-800 border border-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 text-white placeholder-amber-400"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-bold transition w-full md:w-auto"
-              >
-                Send Message
-              </button>
-            </form> -->
+                 <?php echo do_shortcode('[wpforms id="13"]'); ?>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <!-- <footer class="bg-amber-950 text-amber-200 py-10">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="mb-6 md:mb-0">
-            <div class="flex items-center space-x-2">
-              <i class="fas fa-banjo text-2xl text-amber-400"></i>
-              <span class="title-font text-xl">The Rusty Strings</span>
-            </div>
-            <p class="mt-2 text-sm">Old-time banjo music since 2005</p>
-          </div>
-          <div class="flex flex-col items-center md:items-end">
-            <p>&copy; 2023 The Rusty Strings. All rights reserved.</p>
-            <div class="mt-2 flex space-x-4">
-              <a href="#" class="hover:text-amber-400">Privacy Policy</a>
-              <a href="#" class="hover:text-amber-400">Terms of Service</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer> -->
 <?php wp_footer(); ?>
 
     <!-- <script>
@@ -890,5 +853,5 @@ Template Name: Banjo Home template
       });
     </script> -->
     <!-- <script src="https://cdn.plyr.io/3.8.3/plyr.js"></script> -->
-  <!-- </body>
-</html> -->
+  </body>
+</html>

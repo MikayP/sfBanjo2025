@@ -23,8 +23,7 @@ body#app {
     color: $primary-dark-blue;
   }
 
-  .red,
-  a[href] {
+  .red{
     color: $primary-red;
   }
 
@@ -534,13 +533,11 @@ nav {
   }
 }
 
-a.special-button {
+a.special-button  {
   background-color: $primary-cream;
   color: $primary-dark-blue;
   border: 2px solid $primary-dark-blue;
-  &:hover {
-    background-color: d;
-  }
+   text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
 }
 
 .glide__arrow,
@@ -566,6 +563,7 @@ a.special-button {
       border-radius: 8px;
       font-weight: 600;
       color: $primary-red;
+      border-radius: 9999px !important;
     }
   }
 }
