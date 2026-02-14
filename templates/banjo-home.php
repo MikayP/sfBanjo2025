@@ -335,6 +335,8 @@ Template Name: Banjo Home template
                       src="https://sfbanjoband.com/wp-content/uploads/2026/02/IMG_3081-scaled.jpg"
                     />
                   </a>
+                    </li> 
+                    <li class="glide__slide">
                           <a
                     href="https://sfbanjoband.com/wp-content/uploads/2026/02/IMG_3079-scaled.jpg"
                     target="_blank"
@@ -344,6 +346,8 @@ Template Name: Banjo Home template
                       src="https://sfbanjoband.com/wp-content/uploads/2026/02/IMG_3079-scaled.jpg"
                     />
                   </a>
+                  </li>
+                    <li class="glide__slide">
                   <a
                     href="https://sfbanjoband.com/wp-content/uploads/2026/01/DSC_5970-edited-1.jpg"
                     target="_blank"
