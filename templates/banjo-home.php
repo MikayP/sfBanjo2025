@@ -295,7 +295,7 @@ Template Name: Banjo Home template
               Broadway, audiences are taken back to a "different time."
             </p>
             <p class="mt-6">
-              The band was founded in 1975 by two exceptional banjo players, Ray
+              The band was founded in 1960 by two exceptional banjo players, Ray
               Bell and Phil Smith. Not only did they entertain with music, Ray,
               an accomplished magician, would amaze the audience by performing
               his magic tricks in between songs. They played every Friday night
