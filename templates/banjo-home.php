@@ -301,7 +301,7 @@ Template Name: Banjo Home template
               his magic tricks in between songs. They played every Friday night
               at Molloy's Tavern in Colma for eighteen years. After a brief
               interlude the band continues to play at Molloy's Tavern the first
-              Saturday of each month from 6:30pm to 8:30pm, with no cover
+              Saturday of each month from 2-4pm, with no cover
               charge.
             </p>
             <p class="mt-6">
@@ -326,6 +326,24 @@ Template Name: Banjo Home template
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides items-center">
                  <li class="glide__slide">
+                       <a
+                    href="https://sfbanjoband.com/wp-content/uploads/2026/02/IMG_3081-scaled.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      class="rounded-md m-auto h-[300px]"
+                      src="https://sfbanjoband.com/wp-content/uploads/2026/02/IMG_3081-scaled.jpg"
+                    />
+                  </a>
+                          <a
+                    href="https://sfbanjoband.com/wp-content/uploads/2026/02/IMG_3079-scaled.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      class="rounded-md m-auto h-[300px]"
+                      src="https://sfbanjoband.com/wp-content/uploads/2026/02/IMG_3079-scaled.jpg"
+                    />
+                  </a>
                   <a
                     href="https://sfbanjoband.com/wp-content/uploads/2026/01/DSC_5970-edited-1.jpg"
                     target="_blank"
